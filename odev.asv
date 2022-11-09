@@ -1,0 +1,14 @@
+%yatayda ve düþeyde 20 px kaydýr
+%  resim 5/1 oranýnda küçlecek
+%resim 2 kat büyültülerek çizilecek
+% resim gri scale olcak
+% orjinal
+I = imread('cameraman.jpg');
+grayScale = rgb2gray(I);
+twentyPercentZoomOut = imresize(I,0.2);
+fiftypercentZoomIn = imresize(I,1.5);
+imIshift = imtranslate
+figure ,imshow(I),title("Original image");
+figure ,imshow(grayScale),title("Grayscale image");
+figure ,imshow(twentyPercentZoomOut),title("%20 zoom out image");
+figure ,imshow(fiftypercentZoomIn),title("%50 zoom in image");
