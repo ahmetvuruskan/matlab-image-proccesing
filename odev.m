@@ -4,7 +4,6 @@
 % resim gri scale olcak
 % orjinal
 % -30 derece resmi döndür
-%
 clc,clear all ,close all;
 I = imread('cameraman.jpg');
 grayScale = rgb2gray(I);
@@ -15,8 +14,6 @@ thirdFilter  = [1,1,1;0,0,0;-1,-1,-1];
 firstFilteredImage = imfilter(I,firstFilter);
 secondFilteredImage = imfilter(I,secondFilter);
 thirdFilteredImage = imfilter(I,thirdFilter);
-
-
 % Filters end
 twentyPercentZoomOut = imresize(I,0.2);
 fiftypercentZoomIn = imresize(I,2);
