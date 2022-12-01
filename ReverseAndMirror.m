@@ -1,7 +1,7 @@
 I = imread('onion.png');
-I_mirror = flipdim(I,2);
-I_reverse = flipdim(I,1);
-I_mirrev = flipdim(I_reverse,2);
+I_mirror = flip(I,2);
+I_reverse = flip(I,1);
+I_mirrev = flip(I_reverse,2);
 
 figure,
 subplot(2,2,1), imshow(I);title('Original Image');
